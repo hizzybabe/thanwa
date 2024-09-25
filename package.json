@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
     "@astrojs/tailwind": "^5.1.0",
     "@sentry/astro": "^7.93.0",
     "astro": "^4.5.2",
