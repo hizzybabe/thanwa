@@ -1,14 +1,20 @@
 <video
-  class="border  border-black"
+  class="border border-black"
   autoplay
   muted
   loop
-  transition:persist
   playsinline
   poster="./food-poster.png"
-  transition:name="anaren-video"
-  transition:persist
 >
   <source src="./foodmenu.mp4" type="video/mp4" />
 </video>
-<style></style>
+
+<style>
+  video {
+    transition: opacity 1s ease-in-out;
+  }
+
+  video:hover {
+    opacity: 0.8; /* Example transition */
+  }
+</style>
