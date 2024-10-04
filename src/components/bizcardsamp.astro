@@ -1,0 +1,33 @@
+---
+const items = [
+  "/anaren-images/biz1.png",
+  "/anaren-images/biz2.png",
+];
+---
+
+<div class="foodsample">
+  {
+    items.map((item) => (
+        <img loading="lazy" class="foodsample" src={item} alt="Anaren sample " />
+    ))
+  }
+</div>
+
+<style>
+  .foodsample {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: auto;
+  }
+  @media (max-width: 768px) {
+    .foodsample {
+      display: flex;
+      width: 55%;
+      justify-content: left;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+</style>
+
