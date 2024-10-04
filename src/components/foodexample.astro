@@ -9,20 +9,20 @@ const items = [
 <div class="sample">
   {
     items.map((item) => (
-        <img loading="lazy" class="sample" src={item} alt="Anaren sample " />
+        <img loading="lazy" class="foodsample" src={item} alt="Anaren sample " />
     ))
   }
 </div>
 
 <style>
-  .sample {
+  .foodsample {
     display: flex;
     justify-content: center;
     gap: 10px;
     cursor: auto;
   }
   @media (max-width: 768px) {
-    .sample {
+    .foodsample {
       display: flex;
       width: 55%;
       justify-content: left;
